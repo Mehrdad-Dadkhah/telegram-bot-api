@@ -266,6 +266,18 @@ class Api
      *
      * @throws NotOkException
      */
+    public function getChatMembersCount($params)
+    {
+      return $this->request('getChatMembersCount', $params);
+    }
+
+    /**
+     * @param $params
+     *
+     * @return mixed
+     *
+     * @throws NotOkException
+     */
     public function setWebhook($params)
     {
         return $this->request('setWebhook', $params);
